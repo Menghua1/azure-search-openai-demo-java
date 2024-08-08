@@ -82,7 +82,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure Web App'
             inputs:
-              azureSubscription: '<azureSubscriptionServiceConnection>'
+              azureSubscription: 'test'
               appType: 'webAppLinux'
               appName: '$(azureAppServiceName)'
               package: '$(Pipeline.Workspace)/**/$(buildjarfilename).jar'
@@ -108,7 +108,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure Web App'
             inputs:
-              azureSubscription: '<azureSubscriptionServiceConnection>'
+              azureSubscription: 'test'
               appType: 'webAppLinux'
               appName: '$(azureAppServiceName)'
               package: '$(Pipeline.Workspace)/**/$(buildjarfilename).jar'
